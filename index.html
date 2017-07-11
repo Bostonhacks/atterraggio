@@ -25,7 +25,7 @@
 
   <script src="libs/jquery/dist/jquery.min.js"></script>
   <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
   
 	<!-- 	GA tag -->
 	
@@ -63,8 +63,41 @@
         <h1>Boston<b>Hacks</b> Fall 2017</h1>
         <h2>October 28th - 29th<br>Boston, MA</h2>
         <h2>Coming soon...</h2>
+        <br>
+        <div id="homeButtonsContainer">
+          <div id="buttonWrapper">
+            <a href="javascript:void(0);" onclick="showSignup()" class="button homeButtons" id="attendButton">Attend</a>
+            <a href="/BostonHacksFall2017Sponsor.pdf" class="button homeButtons" id="sponsorButton">Sponsor</a>
+          </div>
+        </div>
+        <br>
+        <div id="mailchimp-signup">
+          <h3>Get notified when applications open</h3>
+          <!-- Begin MailChimp Signup Form -->
+              <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+              <style type="text/css">
+              	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+              	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+              	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+              </style>
+              <div id="mc_embed_signup">
+              <form action="//bostonhacks.us11.list-manage.com/subscribe/post?u=13cd178ce59e4de2a1ecb4265&amp;id=6d310e812e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+              	<label for="mce-EMAIL">Email address: </label>
+              	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="you@mail.com" required>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_13cd178ce59e4de2a1ecb4265_6d310e812e" tabindex="-1" value=""></div>
+                  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                  </div>
+              </form>
+              </div>
+            </div>
+          </div>
+          
+          <!--End mc_embed_signup-->
+        </div>
         <div class="line"></div>
-        <h2>contact[at]bostonhacks.io</h2>
+        <h2 class="email-spam-hide">contact[at]bostonhacks.io</h2>
       </div>
       <br>
       <div class="col-md-12">
