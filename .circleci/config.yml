@@ -10,6 +10,7 @@ jobs:
           name: deploy-bostonhacks-headstart-prod
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              ssh -o StrictHostKeyChecking=no circleci@${BOSTONHACKS_IP_ADDR} 'rm -rf /var/www/bostonhacks-static/public/'
               scp -o StrictHostKeyChecking=no -r ~/bostonhacks-static/index.html circleci@${BOSTONHACKS_IP_ADDR}:/var/www/bostonhacks-static/
-              scp -o StrictHostKeyChecking=no -r ~/bostonhacks-static/public/ circleci@${BOSTONHACKS_IP_ADDR}:/var/www/bostonhacks-static/public/
+              scp -o StrictHostKeyChecking=no -r ~/bostonhacks-static/public/ circleci@${BOSTONHACKS_IP_ADDR}:/var/www/bostonhacks-static/
             fi
