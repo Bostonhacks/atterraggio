@@ -36,11 +36,6 @@ h4 {
   font-weight: 300;
  }
 
-svg {
-  max-width: 10em;
-  height: auto;
-}
-
 a {
   color: $orange;
   text-decoration: none;
@@ -55,7 +50,6 @@ a:hover, a:focus {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   color: $offWhite;
-//   font-size: 1.1em;
 }
 
 .p-text {
@@ -74,33 +68,11 @@ h4 { font-size: 14px; }
 
 body {
   background-color: $bgColorLight;
-}
-
-// Landing image bg
-#bg-image {
-  background: url('/public/img/homebg3.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-#bg-overlay {
-  background-color: $transparent-bg;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #home {
   padding-bottom: 20px;
-}
-
-#mlh-trust-badge {
-  display:block;
-  max-width:100px;
-  min-width:60px;
-  position:fixed;
-  right:50px;
-  top:0;
-  width:10%;
-  z-index:10000;
 }
 
 .black { 
@@ -359,40 +331,6 @@ label {
   }
 }
 
-/* FAQ */
-#faq {
-  width: 100%;
-  padding-bottom: 50px;
-}
-
-#faq h3 {
-  font-weight: 600;
-}
-
-.faqTransitionLeft {
-  width: 100%;
-  height: 0;
-  border-style: solid;
-  border-width: 0 200px 100px 0;
-  border-color: transparent $bgColorLight transparent transparent;
-}
-
-.faqTransitionRight {
-  width: 100%;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 100px 200px;
-  border-color: transparent transparent transparent $bgColor;
-}
-
-#faqContainer {
-  width: 100%;
-}
-
-#faqContainer .row {
-  padding: 0px 70px;
-}
-
 @media (max-width: 768px) {
   #faqContainer .row {
     padding: 0px 25px;
@@ -403,46 +341,11 @@ label {
   padding-bottom: 20px;
 }
 
-/*
-#faqHeader {
-  color: #222B30;
-}
-*/
-
-.sponsor-img {
-  height: 80px;
-  display: block;
-  margin: 0 auto;
-}
-
-#contact {
-  margin: 50px 0 75px 0;
-}
-
-#contactHeader {
-    margin-bottom: 50px;
-}
-
 .homeContainer {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
-
-/* Animation */
-
-#icon-ghost {
-  transform: translate(0%,-10%);
-  animation: bob-the-ghost 4s ease-in-out 0s infinite alternate; 
-  position: relative;
-}
-
-#icon-pump {
-  transform: translate(0%,10%) rotate(0deg);
-  animation: bob-the-pump 8s ease-in-out 0s infinite alternate; 
-  position: relative;
-  left: calc(50% - 100px);
 }
 
 @media (min-width: 1024px) {
