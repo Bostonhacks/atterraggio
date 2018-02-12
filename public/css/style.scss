@@ -123,75 +123,6 @@ body {
   color: $light-on-dark;
 }
 
-/* About */
-#about {
-  background-color: $bgColor;
-  padding: 0;
-  transition: background-color 0.3s;
-}
-
-#about .header {
-  padding-top: 40px;
-}
-
-#about-hacking {
-  background-color: $orange;
-  border-radius: 100px 0px 0px 100px;
-  height: 100px;
-  position: relative;
-  top: 100px;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-#about-hacking:hover, #about-hacking:active {
-  cursor: pointer;
-  background-color: $orange-hover;
-  transform: translate(10px,0px);
-}
-
-#about-hacking h1 {
-  font-weight: 300;
-  color: white;
-}
-
-#aboutHackathons {
-  background-color: $orange;
-}
-
-#aboutHackathons p, #aboutHackathons h1 {
-  color: $offWhite;
-}
-
-@media (max-width: 1023px) {
-  #about-hacking {
-    border-radius: 0px;
-    top: 0px;
-    height: 100px !important;
-  }
-  #about-hacking:hover, #about-hacking:active {
-    transform: translate(0px,10px);
-  }
-  #about-hacking h1 {
-    padding: 0px;  
-  }
-}
-
-/*
-#about-hacking::before {
-  width: 100%;
-  border-style: solid;
-  border-width: 0 0 1000px 20px;
-  border-color: transparent transparent transparent $bgColor;
-  overflow-y: hidden;
-}
-*/
-
-/* Attend */
-
-#attend {
-//   background-color: $bgColor;
-}
-
 #homeButtonsContainer {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -209,37 +140,12 @@ body {
   font-weight: 700;
 }
 
-#attendButton {
-  background-color: $orange;
-  margin-right: 30px;
-  
-  transition: background-color 0.3s;
-}
-
-#sponsorButton {
-  background-color: $orange;
-  margin-left: 30px;
-  
-  transition: background-color 0.3s;
-}
-
 .button:hover, .button:focus {
   background-color: $orange-hover !important;
 }
 
-#mc_embed_signup {
-  //background-color: $bgColorLight !important;
-  background-color: rgba(42, 45, 60, 0.9) !important;
-}
-
 label {
   color: white !important;
-}
-
-#mc-embedded-subscribe {
-  background-color: $orange;
-  border-radius: 20px;
-  transition: background-color 0.3s;
 }
 
 .line {
@@ -253,90 +159,6 @@ label {
   border-bottom: 1px solid white;
 }
 
-@media (min-width: 768px) {
-  #attendButton {
-    margin-right: 5px;
-  }
-  
-  #sponsorButton {
-    margin-left: 5px;
-  }
-}
-
-// Tracks
-
-#track-column-contain {
-  padding: 0px 55px;
-}
-
-@media (max-width: 639px) {
-  #track-column-contain {
-    padding: 0px 25px;
-  }
-}
-
-.track-container {
-  background-color: $bgColor;
-  border-radius: 10px;
-  border: 2px solid $borderColor;
-}
-
-.track-container > * {
-  padding: 20px;
-}
-
-.track-container h2 {
-  text-align: center;
-  color: $darkish-on-light;
-  font-weight: 600;
-  padding-top: 40px;
-  padding-bottom: 20px;
-}
-
-.track-container h3 {
-  padding-top: 20px;
-  padding-bottom: 5px;
-  font-weight: 900;
-  color: $darkish-on-light;
-}
-
-.track-container p {
-  color: $dark-on-light;
-}
-
-.track-workshop {
-  position: relative;
-  top: -1px;
-  color: $dark-on-light;
-  border-top: 1px solid $borderColor;
-//   border-bottom: 1px solid $borderColor;
-}
-
-.track-workshop i {
-  text-align: right;
-  position: absolute;
-  right: 20px;
-  bottom: 16px;
-}
-
-.track-question {
-  color: $darkish-on-light;
-  width: 100%;
-  text-align: center;
-}
-
-@media (min-width: 1024px) {
-  .track-question {
-    margin-top: calc(50% - 40px);
-  }
-}
-
-@media (max-width: 768px) {
-  #faqContainer .row {
-    padding: 0px 25px;
-  }
-}
-
 .header {
   padding-bottom: 20px;
 }
@@ -346,28 +168,4 @@ label {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
-
-@media (min-width: 1024px) {
-  #icon-ghost {
-    left: 50px;
-  }
-  #icon-pump {
-    left: 20%;
-    top: 20px;
-  }
-}
-
-@keyframes bob-the-ghost {
-  from { transform: translate(0%,-10%); }
-  to { transform: translate(0%,0%); }
-}
-
-@keyframes bob-the-pump {
-  0% { transform: translate(0%,10%) rotate(0deg); }
-  90% { transform: translate(0%,12%) rotate(2deg); }
-  92% { transform: translate(-2%,10%) rotate(-2deg); }
-  94% { transform: translate(2%,12%) rotate(2deg); }
-  96% { transform: translate(2%,10%) rotate(-2deg); }
-  100% { transform: translate(0%,8%) rotate(0deg); }
 }
